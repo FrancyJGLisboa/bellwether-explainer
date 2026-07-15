@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bellwether — Every number dated and weighed before it leaves the silo.</title>
+  <meta name="description" content="A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.">
+  <meta name="author" content="Francy Lisboa">
+  <link rel="canonical" href="https://francyjglisboa.github.io/bellwether-explainer/">
+  <meta name="theme-color" content="#e8b94a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="bellwether — Every number dated and weighed before it leaves the silo.">
+  <meta property="og:description" content="A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.">
+  <meta property="og:url" content="https://francyjglisboa.github.io/bellwether-explainer/">
+  <meta property="og:image" content="https://francyjglisboa.github.io/bellwether-explainer/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="bellwether — Every number dated and weighed before it leaves the silo.">
+  <meta name="twitter:description" content="A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.">
+  <meta name="twitter:image" content="https://francyjglisboa.github.io/bellwether-explainer/assets/social-card.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "bellwether",
+  "description": "A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.",
+  "url": "https://francyjglisboa.github.io/bellwether-explainer/",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Cross-platform",
+  "image": "https://francyjglisboa.github.io/bellwether-explainer/assets/social-card.png",
+  "author": {
+    "@type": "Person",
+    "name": "Francy Lisboa"
+  },
+  "codeRepository": "https://github.com/FrancyJGLisboa/bellwether",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="prov-banner">
+    <div class="wrap prov-banner-inner">
+      <p class="prov-attr">An explainer for <a href="https://github.com/FrancyJGLisboa/bellwether" target="_blank" rel="noopener">bellwether</a> — built to help you actually implement it.</p>
+      <p class="prov-live"><span class="prov-dot" aria-hidden="true">&#9679;</span> source <code>github.com/FrancyJGLisboa/bellwether</code></p>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="bellwether explainer home">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="3" y="3" width="26" height="26" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"></rect>
+        <rect x="9" y="9" width="14" height="14" rx="4" fill="var(--accent-2)"></rect>
+        <circle cx="16" cy="16" r="3" fill="var(--on-accent)"></circle>
+      </svg>
+        <span>bellwether</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#what-it-is">What it is</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#track-record">Track record</a>
+        <a href="#limits">Limits</a>
+        <a href="#get-started">Get started</a>
+        <a href="https://github.com/FrancyJGLisboa/bellwether" target="_blank" rel="noopener">GitHub &#8599;</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+  <a id="top"></a>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">FrancyJGLisboa/bellwether</span>
+          <h1>A dated record of what the government actually said — and a scored record of whether its forecasts came true</h1>
+          <p class="lede">Bellwether stores U.S. and global farm-data reports exactly as they were published, ties every number it hands back to the document and date it came from, and files its own forecasts in advance so they can be graded later against what really happened.</p>
+          <p class="sub">Built in Python. No install step beyond syncing dependencies — the CLI does the rest.</p>
+          <p class="attrib-lede">An <strong>explainer</strong> for <a href="https://github.com/FrancyJGLisboa/bellwether" target="_blank" rel="noopener">bellwether</a> — built to take you from "never seen it" to "ready to implement".</p>
+          <div class="cta-row">
+          <a class="cta" href="#track-record">See the track record</a>
+          <a class="cta ghost" href="https://github.com/FrancyJGLisboa/bellwether">View on GitHub</a>
+          </div>
+        <div class="meta-row"><span><b>Language</b> Python</span><span><b>Sources</b> 12 government reports, as published since 2020 (some back to 2000)</span><span><b>Measured edge</b> 13 of 23 calls right where climatology expects 7 &mdash; p&nbsp;=&nbsp;0.007</span></div>
+        </div>
+        <figure class="hero-art">
+          <button type="button" class="diagram-zoom" data-src="assets/big-idea.svg" data-alt="Every claim moves from raw as-published source through a frozen archive to a cited, computed, and scored prediction." aria-label="Enlarge: Every claim moves from raw as-published source through a frozen archive to a cited, computed, and scored prediction."><img src="assets/big-idea.svg" alt="Every claim moves from raw as-published source through a frozen archive to a cited, computed, and scored prediction."></button>
+        </figure>
+      </div>
+    </div>
+  </section>
+    <div class="sections">
+      <div class="wrap">
+    <details class="section" id="problem" open>
+      <summary>
+        <span class="num">01</span>
+        <span class="head-text">
+          <h2>You read a claim about crop stocks or drought. Can you check it?</h2>
+          <span class="q">Why would I care?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">Ask most tools a question about supply, weather risk, or trader positioning and you get a fluent, confident paragraph back. What you don't get is a way to know if any number in it is current, revised, or made up.</p>
+      <p>The report a number came from might have been updated since — quietly, in place — and you'd never know your answer was reading the old version. Or the number was never in any report at all; it was smoothed over from memory into something that merely sounds right. Either way, you're trusting it on vibes, because there's no date and no document attached to check against.</p>
+      <p>And even the confident calls — &quot;stocks are tightening,&quot; &quot;conditions are deteriorating&quot; — almost never get followed up. Nobody circles back three months later and asks whether that call was right. Without that follow-up, a wrong call and a right one look identical, and bad analysis survives simply because it's never tested against what actually happened.</p>
+      </div>
+    </details>
+
+    <details class="section" id="what-it-is" open>
+      <summary>
+        <span class="num">02</span>
+        <span class="head-text">
+          <h2>A local archive that remembers exactly what was said, and when</h2>
+          <span class="q">What is this thing, plainly?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">Bellwether is a Python tool that pulls in a fixed set of U.S. and global agricultural reports and stores each one frozen as it looked on its release day — later government revisions don't overwrite what was on record at the time.</p>
+      <p>That "as published" discipline is not a nicety. It is what makes an honest track record possible at all: a system that only serves today's revised figures leaks the answer backwards into the past, and every backtest built on one is fiction.</p>
+      <p>It keeps a written record — call it a ledger — of specific forecasts too: a number, for a named report, due on a named future release date. Those entries sit and wait, and get checked off as right or wrong once the real report lands. The ledger is append-only, and one call per series per release: a call that turns out wrong stays wrong, on the record, and cannot be quietly re-rolled.</p>
+
+      <table class="tbl"><caption class="visually-hidden">The four pieces of the project</caption>
+        <thead><tr><th>Piece</th><th>What it does</th></tr></thead>
+        <tbody>
+        <tr><td>bellwether</td><td>Pulls in and stores the government reports, and answers questions grounded to them</td></tr>
+        <tr><td>tests</td><td>Automated checks that the archive and its answers behave as expected</td></tr>
+        <tr><td>eval</td><td>Grades the tool's own forecasts against what actually happened afterward</td></tr>
+        <tr><td>scripts</td><td>Runs the recurring jobs — refreshing data and grading pending forecasts on schedule</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </details>
+
+    <details class="section" id="the-insight" open>
+      <summary>
+        <span class="num">03</span>
+        <span class="head-text">
+          <h2>It won't make a forecast that can't be wrong</h2>
+          <span class="q">What's the one idea that makes it click?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">The part that makes this more than a data cache: every forecast it produces has to be specific enough to fail.</p>
+      <p>Each view ends in one plain sentence — a number, for a named report, on a named future release date — written down before the outcome is known, not after.</p>
+      <p>And each call is graded against the archive's own climatology: how often this series has historically moved past its standing estimate over the same horizon. Being right when the answer was obvious earns nothing. Beating that baseline is the only thing that counts as skill.</p>
+
+      <figure class="figure diagram concept">
+        <span class="tier tech">The aha</span>
+        <button type="button" class="diagram-zoom" data-src="assets/insight.svg" data-alt="Freezing every release vintage and computing changes mechanically turns eyeballed calls into falsifiable, cited ones." aria-label="Enlarge: Freezing every release vintage and computing changes mechanically turns eyeballed calls into falsifiable, cited ones."><img src="assets/insight.svg" alt="Freezing every release vintage and computing changes mechanically turns eyeballed calls into falsifiable, cited ones." loading="lazy"></button>
+      </figure>
+      <p class="oh">A forecast that can't be wrong isn't a forecast — it's a horoscope.</p>
+      </div>
+    </details>
+
+    <details class="section" id="how-it-works" open>
+      <summary>
+        <span class="num">04</span>
+        <span class="head-text">
+          <h2>Cited numbers, computed direction, graded calls</h2>
+          <span class="q">How does it actually work?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">An AI assistant reaches the archive over MCP (Model Context Protocol — the standard way a connected AI tool calls out to external data instead of guessing from memory). Every figure the assistant hands back must carry the exact document and release date it came from.</p>
+      <p>Before answering, it checks freshness first: a <code>status</code> call flags any source that's out of date, and that flag gets disclosed in the answer rather than hidden. Questions outside its lane — futures prices, basis, trader-consensus surveys, county-level crop detail, weather forecasts — are refused by name instead of guessed at.</p>
+      <p>Directional claims like &quot;stocks are tightening&quot; are never eyeballed — a dedicated calculation (<code>interpret_change</code>) computes the direction and size of every move from the actual figures, and any sentence whose wording contradicts the computed sign is vetoed before it reaches you.</p>
+      <p>After each data refresh, a background job resolves any pending forecasts against the newly landed report and logs each one as a hit or a miss, alongside a running score.</p>
+      <div class="dual">
+      <figure class="figure diagram">
+        <span class="tier tech">Architecture</span>
+        <button type="button" class="diagram-zoom" data-src="assets/architecture.svg" data-alt="The CLI sits on ingestion and grounding modules, which stand on a frozen SQLite archive and its parsing dependencies." aria-label="Enlarge: The CLI sits on ingestion and grounding modules, which stand on a frozen SQLite archive and its parsing dependencies."><img src="assets/architecture.svg" alt="The CLI sits on ingestion and grounding modules, which stand on a frozen SQLite archive and its parsing dependencies." loading="lazy"></button>
+        <figcaption>Architecture — modules, components and how they depend on each other.</figcaption>
+      </figure>
+      <figure class="figure diagram">
+        <span class="tier tech">Data flow</span>
+        <button type="button" class="diagram-zoom" data-src="assets/flow.svg" data-alt="A run refreshes sources, parses them into the archive, checks freshness, then answers with citations and logs a graded call." aria-label="Enlarge: A run refreshes sources, parses them into the archive, checks freshness, then answers with citations and logs a graded call."><img src="assets/flow.svg" alt="A run refreshes sources, parses them into the archive, checks freshness, then answers with citations and logs a graded call." loading="lazy"></button>
+        <figcaption>Data flow — how a request moves through the system at runtime.</figcaption>
+      </figure>
+      </div>
+      </div>
+    </details>
+
+    <details class="section" id="track-record" open>
+      <summary>
+        <span class="num">05</span>
+        <span class="head-text">
+          <h2>Does it actually forecast better than chance?</h2>
+          <span class="q">Where's the proof?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">Every AI tool claims it doesn't hallucinate. Almost none can tell you whether its analysis is any good. Grounding a number and being right about the future are different problems — and only the second one decides whether the thing is worth reading.</p>
+
+      <p>So bellwether was made to forecast, in the dark, and then graded.</p>
+
+      <p>Twenty-four questions: will the WASDE report three months from now print corn, soybean or wheat stocks and exports <em>above</em> or <em>below</em> where USDA has them standing today? Each one was answered by a fresh AI session that could reach <strong>only</strong> a copy of the archive holding data published on or before that question's date. Later data was physically absent from the only database it could open — not discouraged, absent.</p>
+
+      <p><strong>Every release that settles these questions landed after the model's training cutoff.</strong> It cannot have remembered the answers, because they did not exist when it was trained. That single property is what separates a measurement from a magic trick — and it is only available because the archive keeps every release exactly as published.</p>
+
+      <table class="tbl"><caption class="visually-hidden">Backtest results on the post-cutoff window</caption>
+        <thead><tr><th>&nbsp;</th><th>Naive momentum desk</th><th>bellwether</th></tr></thead>
+        <tbody>
+        <tr><td>Calls graded</td><td>9</td><td><b>23</b></td></tr>
+        <tr><td>Hit rate</td><td>0.444</td><td><b>0.565</b></td></tr>
+        <tr><td>Skill vs. climatology</td><td>&minus;0.03</td><td><b>+0.17</b></td></tr>
+        </tbody>
+      </table>
+
+      <p>Thirteen calls right out of twenty-three — where the archive's own history says about <strong>seven</strong> should have been. The odds of managing that by luck are <strong>7 in 1,000</strong> (exact Poisson-binomial, each call scored against its own frozen baseline).</p>
+
+      <p>The naive desk beside it scores about zero, which is precisely what a null is supposed to do. That number is the control: when it drifts away from zero, the referee is broken and no result beside it can be believed.</p>
+
+      <p class="oh">It reads the fundamentals better than chance — and it can prove that on data it could not have memorised.</p>
+      </div>
+    </details>
+
+    <details class="section" id="limits" open>
+      <summary>
+        <span class="num">06</span>
+        <span class="head-text">
+          <h2>What it can't do yet</h2>
+          <span class="q">Where would this let me down?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">A tool that only lists its strengths is asking to be trusted on vibes — which is the exact thing this project exists to refuse.</p>
+
+      <p><strong>The direction is trustworthy. The confidence is not.</strong> Ask how sure it is and it says about <b>70%</b>. Measured, it is right about <b>57%</b> of the time. It is not hallucinating — every figure behind that call traces to a real dated document — it simply over-trusts its own reasoning, the way a bright junior analyst does.</p>
+
+      <p>So take the direction, and <strong>do not size a decision on the percentage.</strong> That gap is a known defect with an open fix, not a footnote we hope you skip. A confident wrong number that passes every citation check is more dangerous than an obvious hallucination, precisely because nothing catches it.</p>
+
+      <p><strong>The live ledger is young.</strong> Its forecasts are filed and pending; the earliest settle at the next monthly report. The evidence above comes from the backtest, which grades the same machinery against releases that have already landed.</p>
+
+      <p><strong>It has no prices.</strong> No futures, no basis, no spreads, no term structure, no weather forecasts, no trade-consensus surveys. Ask, and it refuses by name rather than improvise. That boundary is deliberate: those legs belong to other tools, and a system that guesses at them forfeits the only thing that makes this one worth having.</p>
+      </div>
+    </details>
+
+    <details class="section" id="use-cases" open>
+      <summary>
+        <span class="num">07</span>
+        <span class="head-text">
+          <h2>How you'd actually use it</h2>
+          <span class="q">How would I use it?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">Three shapes of the same idea: don't trust a claim about ag markets you can't trace back to a dated source, and don't let a forecast go unchecked.</p>
+      <div class="gallery"><div class="grid">
+      <details class="case" open>
+        <summary>
+          <span class="uc-num">1</span>
+          <span class="uc-title">Sanity-check a market claim before you repeat it</span>
+          <span class="uc-tag">verification</span>
+          <span class="chev" aria-hidden="true">&rsaquo;</span>
+        </summary>
+        <div class="uc-body">
+          <p>Someone says corn ending stocks are tightening. Instead of taking that on faith, query the archive: it pulls only the report series that claim actually needs, cites each figure to its release date, and says plainly if part of the question (like a price move) is outside what it covers.</p>
+        </div>
+      </details>
+      <details class="case" open>
+        <summary>
+          <span class="uc-num">2</span>
+          <span class="uc-title">Write a forecast that can be proven wrong</span>
+          <span class="uc-tag">prediction tracking</span>
+          <span class="chev" aria-hidden="true">&rsaquo;</span>
+        </summary>
+        <div class="uc-body">
+          <p>Instead of analysis nobody checks later, log a call bound to a specific future report release. The same tooling replays it over past windows with no lookahead — the sandboxed backtest in <code>eval/</code> is exactly how the numbers in the previous section were produced, and you can rerun it yourself.</p>
+        </div>
+      </details>
+      <details class="case" open>
+        <summary>
+          <span class="uc-num">3</span>
+          <span class="uc-title">Let it run on a schedule and report its own scorecard</span>
+          <span class="uc-tag">automation</span>
+          <span class="chev" aria-hidden="true">&rsaquo;</span>
+        </summary>
+        <div class="uc-body">
+          <p>Wired to a recurring job, it refreshes the underlying data and grades any forecasts that just came due automatically — surfacing hits and misses without you having to check in and remember to look.</p>
+        </div>
+      </details>
+      </div></div>
+      </div>
+    </details>
+
+    <details class="section" id="get-started" open>
+      <summary>
+        <span class="num">08</span>
+        <span class="head-text">
+          <h2>Run it yourself</h2>
+          <span class="q">How do I run it myself, right now?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">No separate install step is listed for this repo beyond syncing dependencies — the CLI (<code>bellwether</code>) handles archive-building and querying from there.</p>
+      <div class="install-block"><pre class="code-block"><code>uv sync</code></pre></div>
+      <ol class="steps">
+        <li><strong>Prerequisite</strong> A Python project managed with uv (the dependency/runner tool). Have uv installed; nothing else is required first.</li>
+        <li><strong>Install dependencies</strong> Run <code>uv sync</code> — pulls in the project's pinned packages, including claimcheck, pypdf, and xlrd.</li>
+        <li><strong>Build the local archive</strong> Run <code>uv run bellwether all --since 2020 --root archive</code> — fetches every source since 2020 into a local <code>archive/</code> folder. Expect a real download; this populates the archive, it doesn't just configure something.</li>
+        <li><strong>Confirm it worked</strong> Run <code>uv run bellwether status</code> — prints each source with a freshness flag. A clean run shows the sources you just pulled as current, not stale.</li>
+        <li><strong>Query the archive directly</strong> Run <code>uv run bellwether facts &amp;&amp; uv run bellwether fts</code> to see the stored, dated records themselves — this is what you now have: a local, citeable archive instead of a black-box summary.</li>
+        <li><strong>Grade it yourself</strong> Run <code>uv run python eval/backtest.py --policy mech --grid v3</code> for the zero-token null desk, and read <code>eval/backtest_v3_protocol.md</code> — the protocol was committed before any answers existed, and the commit order is the audit.</li>
+        <li><strong>Next</strong> Keep it current with <code>uv run bellwether refresh</code>, or pull a single source on demand — e.g. <code>uv run bellwether wasde --since 2020</code> or <code>uv run bellwether nass --since 2000</code>.</li>
+      </ol>
+      </div>
+    </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="explainer-footer" role="contentinfo">
+    <div class="wrap explainer-footer-inner">
+      <p class="ef-credit">
+        Explainer page created by <strong>Francy Lisboa</strong>
+        <span class="ef-fine">Figures from the post-cutoff backtest — referee <code>2dec541</code>, 23 graded calls.
+        Protocols and raw per-call results live in <code>eval/</code> in the repository.</span>
+        <span class="ef-fine">Built with <strong>repolucid</strong> &mdash; an adapted fork of the open-source
+        <a href="https://github.com/stuinfla/Repo-Explainer" rel="noopener" target="_blank">explainmyrepo</a>
+        engine by Stuart Kerr (ISOvision), MIT.</span>
+      </p>
+    </div>
+  </footer>
+  <dialog class="diagram-lightbox" id="diagram-lightbox" aria-label="Enlarged diagram">
+    <button type="button" class="lightbox-close" data-close aria-label="Close">&times;</button>
+    <img id="diagram-lightbox-img" src="" alt="">
+  </dialog>
+  <script>
+  (function () {
+    var dlg = document.getElementById('diagram-lightbox');
+    if (!dlg || typeof dlg.showModal !== 'function') return;
+    var img = document.getElementById('diagram-lightbox-img');
+    document.querySelectorAll('.diagram-zoom').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        img.src = btn.getAttribute('data-src');
+        img.alt = btn.getAttribute('data-alt') || '';
+        dlg.showModal();
+      });
+    });
+    dlg.addEventListener('click', function (e) {
+      if (e.target === dlg || e.target.hasAttribute('data-close')) dlg.close();
+    });
+  })();
+  </script>
+</body>
+</html>

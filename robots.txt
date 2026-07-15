@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://francyjglisboa.github.io/bellwether-explainer/sitemap.xml

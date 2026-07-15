@@ -1,0 +1,3 @@
+# static explainer only — never add archive/data
+*.db
+*.sqlite

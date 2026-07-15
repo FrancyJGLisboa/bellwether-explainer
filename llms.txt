@@ -1,0 +1,43 @@
+# bellwether
+
+> Every number dated and weighed before it leaves the silo.
+
+A point-in-time archive of 12 US and global agricultural-intelligence sources, stored
+exactly as published, served to AI agents over MCP — with every figure cited to its
+source document and release date, every direction computed rather than eyeballed, and
+every forecast filed in advance into an append-only ledger that grades itself when the
+report lands.
+
+This is an explainer for bellwether by Francy Lisboa — it takes a newcomer from
+"never seen it" to "ready to implement".
+
+## What it is
+bellwether: silo core sample — a steel auger bored down through a grain silo, exposing
+dated strata that were never disturbed after they fell.
+
+## The measured claim
+On a backtest window whose resolving releases all postdate the model's training cutoff
+(so the answers cannot have been memorised), bellwether called the direction of the next
+WASDE print correctly in 13 of 23 graded questions, where the archive's own climatology
+expects about 7. Exact Poisson-binomial p = 0.007. A naive momentum desk on the identical
+questions and referee scores about zero skill, as a null should.
+
+## The honest limit
+The direction is measured and skilled. The CONFIDENCE is not yet trustworthy: the system
+states roughly 70% and is right roughly 57% of the time. Take the direction; do not size
+a decision on the percentage. Every figure behind a call traces to a real dated document
+— the defect is over-trust in its own reasoning, not fabrication.
+
+## Out of corpus, by design
+No futures prices, basis, spreads, term structure, weather forecasts, or trade-consensus
+surveys. These are refused by name rather than improvised.
+
+## For your AI
+A downloadable knowledge pack (RVF vector KB + MCP server) ships with this page so your
+agent can search the source too: https://francyjglisboa.github.io/bellwether-explainer/bellwether-knowledge-pack.zip
+
+## Links
+- Live explainer: https://francyjglisboa.github.io/bellwether-explainer/
+- Source repository: https://github.com/FrancyJGLisboa/bellwether
+- Backtest protocols and raw per-call results: eval/ in the repository
+- AI knowledge pack: https://francyjglisboa.github.io/bellwether-explainer/bellwether-knowledge-pack.zip

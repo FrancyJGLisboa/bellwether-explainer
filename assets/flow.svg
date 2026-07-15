@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-form="vertical-path" viewBox="0 0 1234 1234" width="1234" height="1234" role="img" aria-labelledby="d-title d-desc">
+  <title id="d-title">bellwether — Process / Data Flow</title>
+  <desc id="d-desc">A run refreshes sources, parses them into the archive, checks freshness, then answers with citations and logs a graded call.</desc>
+  <metadata><![CDATA[
+uv run bellwether refresh -> uv run bellwether facts -> uv run bellwether fts -> uv run bellwether status -> ground_answer cites the release
+]]></metadata>
+  <style>
+    .flow-line { stroke-dasharray: 8 10; stroke-width: 3; animation: flow-dash 1.1s linear infinite; }
+    @keyframes flow-dash { to { stroke-dashoffset: -36; } }
+    .node-pulse { transform-box: fill-box; transform-origin: center; animation: node-pulse 2.1s cubic-bezier(0.4,0,0.2,1) infinite; }
+    @keyframes node-pulse { 0%, 100% { opacity: 0.35; transform: scale(1); } 50% { opacity: 1; transform: scale(1.6); } }
+    @media (prefers-reduced-motion: reduce) { .flow-line, .node-pulse { animation: none; } }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#0b1018"/><stop offset="0.55" stop-color="#0a0e15"/><stop offset="1" stop-color="#070a10"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.02" r="0.8">
+      <stop offset="0" stop-color="rgba(232,185,74,0.1)"/><stop offset="0.5" stop-color="rgba(232,185,74,0.025)"/><stop offset="1" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.09)"/><stop offset="0.5" stop-color="rgba(255,255,255,0.015)"/><stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.014)"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="11"/></filter>
+    <filter id="glowS" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="cardSh" x="-40%" y="-50%" width="180%" height="210%">
+      <feDropShadow dx="0" dy="6" stdDeviation="11" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1234" height="1234" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1234" height="1234" fill="url(#spot)"/>
+  <rect x="0" y="0" width="1234" height="1234" fill="url(#grid)"/>
+  <g transform="translate(231.0,0.0)">
+<text x="386" y="44" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="13" font-weight="600" fill="#e8b94a" text-anchor="middle" letter-spacing="3">BELLWETHER · DATA FLOW</text>
+  <text x="386" y="80" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="30" font-weight="800" fill="#e8b94a" text-anchor="middle" opacity="0.45" filter="url(#glowS)">How It Runs</text>
+<text x="386" y="80" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="30" font-weight="800" fill="#f1f5f9" text-anchor="middle">How It Runs</text>
+  <line x1="352" y1="98" x2="420" y2="98" stroke="#e8b94a" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <rect x="314.0" y="150" width="144" height="40" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(232,185,74,0.5)" stroke-width="1.25"/>
+  <rect x="314.0" y="150" width="144" height="40" rx="20" fill="url(#sheen)" opacity="0.4"/>
+  <circle cx="332.0" cy="170.0" r="3.4" fill="#e8b94a" filter="url(#glowS)"/>
+<text x="344" y="170" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="800" fill="#e8b94a" text-anchor="start" dominant-baseline="central" letter-spacing="1.2">SOURCE</text>
+<text x="400" y="170" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12.5" font-weight="400" fill="#f1f5f9" text-anchor="start" dominant-baseline="central">input</text>
+  <line x1="386" y1="194" x2="386" y2="248" stroke="#e8b94a" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:0.00s" x1="386" y1="194" x2="386" y2="248" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 381.7 240.1 L 386.0 248.0 L 390.3 240.1" fill="none" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="49" y="249" width="674" height="118" rx="20" fill="#e8b94a" opacity="0.080" filter="url(#glow)"/>
+  <rect x="54" y="258" width="664" height="108" rx="16" fill="rgba(93,74,30,0.85)"/>
+  <rect x="54" y="252" width="664" height="108" rx="16" fill="rgba(232,185,74,0.07)" stroke="rgba(232,185,74,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="54" y="252" width="664" height="108" rx="16" fill="url(#sheen)"/>
+  <path d="M 70 253.25 H 702" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <circle class="node-pulse" style="animation-delay:0.22s" cx="104" cy="306" r="22" fill="#e8b94a" opacity="0.28" filter="url(#glowS)"/>
+  <circle cx="104" cy="306" r="20" fill="rgba(232,185,74,0.2)" stroke="#e8b94a" stroke-width="1.75"/>
+<text x="104" y="307" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="20" font-weight="800" fill="#f5e0ae" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="142" y="286" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="18" font-weight="800" fill="#f1f5f9" text-anchor="start" letter-spacing="0.4">uv run bellwether refresh</text>
+  <line x1="504" y1="270" x2="504" y2="342" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+<text x="522" y="294" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#7c8aa0" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">IN</text>
+<text x="556" y="294" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="400" fill="#aab6c8" text-anchor="start" dominant-baseline="central">input</text>
+  <path d="M 529 302 V 312" stroke="rgba(232,185,74,0.55)" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 525.5 308 L 529 312.5 L 532.5 308" fill="none" stroke="rgba(232,185,74,0.55)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="318" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#e8b94a" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">OUT</text>
+<text x="556" y="336" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="600" fill="#f1d592" text-anchor="start" dominant-baseline="central">uv run bellwether ref…</text>
+  <line x1="386" y1="364" x2="386" y2="418" stroke="#e1ad52" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:0.55s" x1="386" y1="364" x2="386" y2="418" stroke="#e9c27d" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 381.7 410.1 L 386.0 418.0 L 390.3 410.1" fill="none" stroke="#e9c27d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="301.0" y="380.0" width="170" height="22" rx="11" fill="rgba(8,11,17,0.94)" stroke="rgba(225,173,82,0.5)" stroke-width="1"/>
+<text x="386" y="391" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="400" fill="#edce97" text-anchor="middle" dominant-baseline="central">uv run bellwether ref…</text>
+  <rect x="49" y="419" width="674" height="118" rx="20" fill="#d9a05a" opacity="0.080" filter="url(#glow)"/>
+  <rect x="54" y="428" width="664" height="108" rx="16" fill="rgba(87,64,36,0.85)"/>
+  <rect x="54" y="422" width="664" height="108" rx="16" fill="rgba(217,160,90,0.07)" stroke="rgba(217,160,90,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="54" y="422" width="664" height="108" rx="16" fill="url(#sheen)"/>
+  <path d="M 70 423.25 H 702" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <circle class="node-pulse" style="animation-delay:0.77s" cx="104" cy="476" r="22" fill="#d9a05a" opacity="0.28" filter="url(#glowS)"/>
+  <circle cx="104" cy="476" r="20" fill="rgba(217,160,90,0.2)" stroke="#d9a05a" stroke-width="1.75"/>
+<text x="104" y="477" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="20" font-weight="800" fill="#eed4b5" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="142" y="456" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="18" font-weight="800" fill="#f1f5f9" text-anchor="start" letter-spacing="0.4">uv run bellwether facts</text>
+  <line x1="504" y1="440" x2="504" y2="512" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+<text x="522" y="464" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#7c8aa0" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">IN</text>
+<text x="556" y="464" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="400" fill="#aab6c8" text-anchor="start" dominant-baseline="central">uv run bellwether ref…</text>
+  <path d="M 529 472 V 482" stroke="rgba(217,160,90,0.55)" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 525.5 478 L 529 482.5 L 532.5 478" fill="none" stroke="rgba(217,160,90,0.55)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="488" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#d9a05a" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">OUT</text>
+<text x="556" y="506" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="600" fill="#e8c69c" text-anchor="start" dominant-baseline="central">uv run bellwether fac…</text>
+  <line x1="386" y1="534" x2="386" y2="588" stroke="#d19553" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:1.10s" x1="386" y1="534" x2="386" y2="588" stroke="#ddb07e" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 381.7 580.1 L 386.0 588.0 L 390.3 580.1" fill="none" stroke="#ddb07e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="301.0" y="550.0" width="170" height="22" rx="11" fill="rgba(8,11,17,0.94)" stroke="rgba(209,149,83,0.5)" stroke-width="1"/>
+<text x="386" y="561" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="400" fill="#e3bf98" text-anchor="middle" dominant-baseline="central">uv run bellwether fac…</text>
+  <rect x="49" y="589" width="674" height="118" rx="20" fill="#c98a4b" opacity="0.080" filter="url(#glow)"/>
+  <rect x="54" y="598" width="664" height="108" rx="16" fill="rgba(80,55,30,0.85)"/>
+  <rect x="54" y="592" width="664" height="108" rx="16" fill="rgba(201,138,75,0.07)" stroke="rgba(201,138,75,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="54" y="592" width="664" height="108" rx="16" fill="url(#sheen)"/>
+  <path d="M 70 593.25 H 702" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <circle class="node-pulse" style="animation-delay:1.32s" cx="104" cy="646" r="22" fill="#c98a4b" opacity="0.28" filter="url(#glowS)"/>
+  <circle cx="104" cy="646" r="20" fill="rgba(201,138,75,0.2)" stroke="#c98a4b" stroke-width="1.75"/>
+<text x="104" y="647" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="20" font-weight="800" fill="#e7caae" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="142" y="626" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="18" font-weight="800" fill="#f1f5f9" text-anchor="start" letter-spacing="0.4">uv run bellwether fts</text>
+  <line x1="504" y1="610" x2="504" y2="682" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+<text x="522" y="634" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#7c8aa0" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">IN</text>
+<text x="556" y="634" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="400" fill="#aab6c8" text-anchor="start" dominant-baseline="central">uv run bellwether fac…</text>
+  <path d="M 529 642 V 652" stroke="rgba(201,138,75,0.55)" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 525.5 648 L 529 652.5 L 532.5 648" fill="none" stroke="rgba(201,138,75,0.55)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="658" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#c98a4b" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">OUT</text>
+<text x="556" y="676" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="600" fill="#dfb993" text-anchor="start" dominant-baseline="central">uv run bellwether fts</text>
+  <line x1="386" y1="704" x2="386" y2="758" stroke="#a373a5" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:1.65s" x1="386" y1="704" x2="386" y2="758" stroke="#ba96bc" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 381.7 750.1 L 386.0 758.0 L 390.3 750.1" fill="none" stroke="#ba96bc" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="304.5" y="720.0" width="163" height="22" rx="11" fill="rgba(8,11,17,0.94)" stroke="rgba(163,115,165,0.5)" stroke-width="1"/>
+<text x="386" y="731" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="400" fill="#c8abc9" text-anchor="middle" dominant-baseline="central">uv run bellwether fts</text>
+  <rect x="49" y="759" width="674" height="118" rx="20" fill="#f4d47c, #e8b94a, #d9a05a, #c98a4b" opacity="0.080" filter="url(#glow)"/>
+  <rect x="54" y="768" width="664" height="108" rx="16" fill="rgba(50,37,102,0.85)"/>
+  <rect x="54" y="762" width="664" height="108" rx="16" fill="rgba(124,92,255,0.07)" stroke="rgba(124,92,255,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="54" y="762" width="664" height="108" rx="16" fill="url(#sheen)"/>
+  <path d="M 70 763.25 H 702" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <circle class="node-pulse" style="animation-delay:1.87s" cx="104" cy="816" r="22" fill="#f4d47c, #e8b94a, #d9a05a, #c98a4b" opacity="0.28" filter="url(#glowS)"/>
+  <circle cx="104" cy="816" r="20" fill="rgba(124,92,255,0.2)" stroke="#f4d47c, #e8b94a, #d9a05a, #c98a4b" stroke-width="1.75"/>
+<text x="104" y="817" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="20" font-weight="800" fill="#c4b6ff" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="142" y="796" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="18" font-weight="800" fill="#f1f5f9" text-anchor="start" letter-spacing="0.4">uv run bellwether status</text>
+  <line x1="504" y1="780" x2="504" y2="852" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+<text x="522" y="804" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#7c8aa0" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">IN</text>
+<text x="556" y="804" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="400" fill="#aab6c8" text-anchor="start" dominant-baseline="central">uv run bellwether fts</text>
+  <path d="M 529 812 V 822" stroke="rgba(124,92,255,0.55)" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 525.5 818 L 529 822.5 L 532.5 818" fill="none" stroke="rgba(124,92,255,0.55)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="828" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#f4d47c, #e8b94a, #d9a05a, #c98a4b" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">OUT</text>
+<text x="556" y="846" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="600" fill="#b09dff" text-anchor="start" dominant-baseline="central">uv run bellwether sta…</text>
+  <line x1="386" y1="874" x2="386" y2="928" stroke="#4f98f7" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:2.20s" x1="386" y1="874" x2="386" y2="928" stroke="#7bb2f9" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 381.7 920.1 L 386.0 928.0 L 390.3 920.1" fill="none" stroke="#7bb2f9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="301.0" y="890.0" width="170" height="22" rx="11" fill="rgba(8,11,17,0.94)" stroke="rgba(79,152,247,0.5)" stroke-width="1"/>
+<text x="386" y="901" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="400" fill="#95c1fa" text-anchor="middle" dominant-baseline="central">uv run bellwether sta…</text>
+  <rect x="49" y="929" width="674" height="118" rx="20" fill="#22d3ee" opacity="0.080" filter="url(#glow)"/>
+  <rect x="54" y="938" width="664" height="108" rx="16" fill="rgba(14,84,95,0.85)"/>
+  <rect x="54" y="932" width="664" height="108" rx="16" fill="rgba(34,211,238,0.07)" stroke="rgba(34,211,238,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="54" y="932" width="664" height="108" rx="16" fill="url(#sheen)"/>
+  <path d="M 70 933.25 H 702" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <circle class="node-pulse" style="animation-delay:2.42s" cx="104" cy="986" r="22" fill="#22d3ee" opacity="0.28" filter="url(#glowS)"/>
+  <circle cx="104" cy="986" r="20" fill="rgba(34,211,238,0.2)" stroke="#22d3ee" stroke-width="1.75"/>
+<text x="104" y="987" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="20" font-weight="800" fill="#9cebf7" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="142" y="966" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="18" font-weight="800" fill="#f1f5f9" text-anchor="start" letter-spacing="0.4">ground_answer cites the release</text>
+  <line x1="504" y1="950" x2="504" y2="1022" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+<text x="522" y="974" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#7c8aa0" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">IN</text>
+<text x="556" y="974" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="400" fill="#aab6c8" text-anchor="start" dominant-baseline="central">uv run bellwether sta…</text>
+  <path d="M 529 982 V 992" stroke="rgba(34,211,238,0.55)" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 525.5 988 L 529 992.5 L 532.5 988" fill="none" stroke="rgba(34,211,238,0.55)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="998" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="10.5" font-weight="700" fill="#22d3ee" text-anchor="start" dominant-baseline="central" letter-spacing="1.5">OUT</text>
+<text x="556" y="1016" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="600" fill="#7ae5f5" text-anchor="start" dominant-baseline="central">ground_answer cites t…</text>
+  <line x1="386" y1="1044" x2="386" y2="1098" stroke="#22d3ee" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:2.75s" x1="386" y1="1044" x2="386" y2="1098" stroke="#59def2" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 381.7 1090.1 L 386.0 1098.0 L 390.3 1090.1" fill="none" stroke="#59def2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="301.0" y="1060.0" width="170" height="22" rx="11" fill="rgba(8,11,17,0.94)" stroke="rgba(34,211,238,0.5)" stroke-width="1"/>
+<text x="386" y="1071" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="400" fill="#7ae5f5" text-anchor="middle" dominant-baseline="central">ground_answer cites t…</text>
+  <rect x="216.5" y="1102" width="339" height="40" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(34,211,238,0.5)" stroke-width="1.25"/>
+  <rect x="216.5" y="1102" width="339" height="40" rx="20" fill="url(#sheen)" opacity="0.4"/>
+  <circle cx="234.5" cy="1122.0" r="3.4" fill="#22d3ee" filter="url(#glowS)"/>
+<text x="246.5" y="1122" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="11" font-weight="800" fill="#22d3ee" text-anchor="start" dominant-baseline="central" letter-spacing="1.2">RESULT</text>
+<text x="302.5" y="1122" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12.5" font-weight="400" fill="#f1f5f9" text-anchor="start" dominant-baseline="central">ground_answer cites the release</text>
+<text x="386" y="1188" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="12" font-weight="400" fill="#7c8aa0" text-anchor="middle">A run refreshes sources, parses them into the archive, checks freshness, then answers w…</text>
+  </g>
+</svg>

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-form="contrast" viewBox="0 0 1004 597" width="1004" height="597" role="img" aria-labelledby="d-title d-desc">
+  <title id="d-title">bellwether — The Insight</title>
+  <desc id="d-desc">Freezing every release vintage and computing changes mechanically turns eyeballed calls into falsifiable, cited ones.</desc>
+  <metadata><![CDATA[
+Frozen release vintages -> Computed, never eyeballed -> Falsifiable prediction ledger
+]]></metadata>
+  <style>
+    .flow-line { stroke-dasharray: 8 10; stroke-width: 3; animation: flow-dash 1.1s linear infinite; }
+    @keyframes flow-dash { to { stroke-dashoffset: -36; } }
+    .node-pulse { transform-box: fill-box; transform-origin: center; animation: node-pulse 2.1s cubic-bezier(0.4,0,0.2,1) infinite; }
+    @keyframes node-pulse { 0%, 100% { opacity: 0.35; transform: scale(1); } 50% { opacity: 1; transform: scale(1.6); } }
+    @media (prefers-reduced-motion: reduce) { .flow-line, .node-pulse { animation: none; } }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#0b1018"/><stop offset="0.55" stop-color="#0a0e15"/><stop offset="1" stop-color="#070a10"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.02" r="0.8">
+      <stop offset="0" stop-color="rgba(232,185,74,0.1)"/><stop offset="0.5" stop-color="rgba(232,185,74,0.025)"/><stop offset="1" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.09)"/><stop offset="0.5" stop-color="rgba(255,255,255,0.015)"/><stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.014)"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="11"/></filter>
+    <filter id="glowS" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="cardSh" x="-40%" y="-50%" width="180%" height="210%">
+      <feDropShadow dx="0" dy="6" stdDeviation="11" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1004" height="597" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1004" height="597" fill="url(#spot)"/>
+  <rect x="0" y="0" width="1004" height="597" fill="url(#grid)"/>
+<text x="502" y="44" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="13" font-weight="600" fill="#e8b94a" text-anchor="middle" letter-spacing="3">THE INSIGHT</text>
+  <text x="502" y="80" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="30" font-weight="800" fill="#e8b94a" text-anchor="middle" opacity="0.45" filter="url(#glowS)">The Clever Move</text>
+<text x="502" y="80" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="30" font-weight="800" fill="#f1f5f9" text-anchor="middle">The Clever Move</text>
+  <line x1="468" y1="98" x2="536" y2="98" stroke="#e8b94a" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <rect x="51" y="137" width="410" height="62" rx="18" fill="#7c8aa0" opacity="0.175" filter="url(#glow)"/>
+  <rect x="56" y="146" width="400" height="52" rx="14" fill="rgba(50,55,64,0.85)"/>
+  <rect x="56" y="140" width="400" height="52" rx="14" fill="rgba(124,138,160,0.14)" stroke="rgba(124,138,160,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="56" y="140" width="400" height="52" rx="14" fill="url(#sheen)"/>
+  <path d="M 70 141.25 H 442" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="256" y="166" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="14" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central" letter-spacing="2">WITHOUT IT</text>
+  <rect x="543" y="137" width="410" height="62" rx="18" fill="#e8b94a" opacity="0.175" filter="url(#glow)"/>
+  <rect x="548" y="146" width="400" height="52" rx="14" fill="rgba(93,74,30,0.85)"/>
+  <rect x="548" y="140" width="400" height="52" rx="14" fill="rgba(232,185,74,0.14)" stroke="rgba(232,185,74,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="548" y="140" width="400" height="52" rx="14" fill="url(#sheen)"/>
+  <path d="M 562 141.25 H 934" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="748" y="166" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="14" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central" letter-spacing="2">WITH IT</text>
+  <line x1="502" y1="136" x2="502" y2="496" stroke="rgba(232,185,74,0.35)" stroke-width="1.5" stroke-dasharray="5 7"/>
+  <rect x="51" y="203" width="410" height="72" rx="16" fill="#7c8aa0" opacity="0.090" filter="url(#glow)"/>
+  <rect x="56" y="211" width="400" height="62" rx="12" fill="rgba(50,55,64,0.85)"/>
+  <rect x="56" y="206" width="400" height="62" rx="12" fill="rgba(124,138,160,0.09)" stroke="rgba(124,138,160,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="56" y="206" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 68 207.25 H 444" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="256" y="227.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">NASS revisions overwrite what was</text>
+<text x="256" y="246.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">published in 2020</text>
+  <rect x="543" y="203" width="410" height="72" rx="16" fill="#e8b94a" opacity="0.275" filter="url(#glow)"/>
+  <rect x="548" y="214" width="400" height="62" rx="12" fill="rgba(93,74,30,0.85)"/>
+  <rect x="548" y="206" width="400" height="62" rx="12" fill="rgba(232,185,74,0.2)" stroke="rgba(232,185,74,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="548" y="206" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 560 207.25 H 936" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="748" y="227.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">facts.db freezes 2020's number as</text>
+<text x="748" y="246.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">originally published</text>
+  <line x1="466" y1="237" x2="538" y2="237" stroke="#e8b94a" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:0.00s" x1="466" y1="237" x2="538" y2="237" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 530.1 241.3 L 538.0 237.0 L 530.1 232.7" fill="none" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="51" y="281" width="410" height="72" rx="16" fill="#7c8aa0" opacity="0.090" filter="url(#glow)"/>
+  <rect x="56" y="289" width="400" height="62" rx="12" fill="rgba(50,55,64,0.85)"/>
+  <rect x="56" y="284" width="400" height="62" rx="12" fill="rgba(124,138,160,0.09)" stroke="rgba(124,138,160,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="56" y="284" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 68 285.25 H 444" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="256" y="305.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">Direction and magnitude are</text>
+<text x="256" y="324.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">eyeballed off a chart</text>
+  <rect x="543" y="281" width="410" height="72" rx="16" fill="#e8b94a" opacity="0.275" filter="url(#glow)"/>
+  <rect x="548" y="292" width="400" height="62" rx="12" fill="rgba(93,74,30,0.85)"/>
+  <rect x="548" y="284" width="400" height="62" rx="12" fill="rgba(232,185,74,0.2)" stroke="rgba(232,185,74,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="548" y="284" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 560 285.25 H 936" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="748" y="305.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">interpret_change computes the</text>
+<text x="748" y="324.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">move, source cited</text>
+  <line x1="466" y1="315" x2="538" y2="315" stroke="#e8b94a" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:0.20s" x1="466" y1="315" x2="538" y2="315" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 530.1 319.3 L 538.0 315.0 L 530.1 310.7" fill="none" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="51" y="359" width="410" height="72" rx="16" fill="#7c8aa0" opacity="0.090" filter="url(#glow)"/>
+  <rect x="56" y="367" width="400" height="62" rx="12" fill="rgba(50,55,64,0.85)"/>
+  <rect x="56" y="362" width="400" height="62" rx="12" fill="rgba(124,138,160,0.09)" stroke="rgba(124,138,160,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="56" y="362" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 68 363.25 H 444" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="256" y="383.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">A bullish call gets made, then</text>
+<text x="256" y="402.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">forgotten</text>
+  <rect x="543" y="359" width="410" height="72" rx="16" fill="#e8b94a" opacity="0.275" filter="url(#glow)"/>
+  <rect x="548" y="370" width="400" height="62" rx="12" fill="rgba(93,74,30,0.85)"/>
+  <rect x="548" y="362" width="400" height="62" rx="12" fill="rgba(232,185,74,0.2)" stroke="rgba(232,185,74,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="548" y="362" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 560 363.25 H 936" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="748" y="383.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">Every graded call binds to a</text>
+<text x="748" y="402.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">prediction the daemon scores</text>
+  <line x1="466" y1="393" x2="538" y2="393" stroke="#e8b94a" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:0.40s" x1="466" y1="393" x2="538" y2="393" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 530.1 397.3 L 538.0 393.0 L 530.1 388.7" fill="none" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="51" y="437" width="410" height="72" rx="16" fill="#7c8aa0" opacity="0.090" filter="url(#glow)"/>
+  <rect x="56" y="445" width="400" height="62" rx="12" fill="rgba(50,55,64,0.85)"/>
+  <rect x="56" y="440" width="400" height="62" rx="12" fill="rgba(124,138,160,0.09)" stroke="rgba(124,138,160,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="56" y="440" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 68 441.25 H 444" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="256" y="461.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">Stale source data gets used</text>
+<text x="256" y="480.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="500" fill="#7c8aa0" text-anchor="middle" dominant-baseline="central">without disclosure</text>
+  <rect x="543" y="437" width="410" height="72" rx="16" fill="#e8b94a" opacity="0.275" filter="url(#glow)"/>
+  <rect x="548" y="448" width="400" height="62" rx="12" fill="rgba(93,74,30,0.85)"/>
+  <rect x="548" y="440" width="400" height="62" rx="12" fill="rgba(232,185,74,0.2)" stroke="rgba(232,185,74,0.42)" stroke-width="1.25" filter="url(#cardSh)"/>
+  <rect x="548" y="440" width="400" height="62" rx="12" fill="url(#sheen)"/>
+  <path d="M 560 441.25 H 936" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none" stroke-linecap="round"/>
+<text x="748" y="461.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">status is checked first, STALE</text>
+<text x="748" y="480.5" font-family="ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle" dominant-baseline="central">sources are disclosed</text>
+  <line x1="466" y1="471" x2="538" y2="471" stroke="#e8b94a" stroke-width="9" opacity="0.3" filter="url(#glow)" stroke-linecap="round"/>
+  <line class="flow-line" style="animation-delay:0.60s" x1="466" y1="471" x2="538" y2="471" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 530.1 475.3 L 538.0 471.0 L 530.1 466.7" fill="none" stroke="#eecb77" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="502" y="549" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="13" font-weight="400" fill="#7c8aa0" text-anchor="middle">Freezing every release vintage and computing changes mechanically turns eyeballed calls into falsifiable, cited</text>
+<text x="502" y="568.5" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Monaco,Consolas,monospace" font-size="13" font-weight="400" fill="#7c8aa0" text-anchor="middle">ones.</text>
+</svg>
