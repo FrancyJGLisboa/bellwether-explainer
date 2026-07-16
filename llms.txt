@@ -2,7 +2,7 @@
 
 > Every number dated and weighed before it leaves the silo.
 
-A point-in-time archive of 12 US and global agricultural-intelligence sources, stored
+A point-in-time archive of 13 US and global agricultural-intelligence sources, stored
 exactly as published, served to AI agents over MCP — with every figure cited to its
 source document and release date, every direction computed rather than eyeballed, and
 every forecast filed in advance into an append-only ledger that grades itself when the

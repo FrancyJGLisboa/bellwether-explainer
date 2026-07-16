@@ -98,7 +98,7 @@
           <a class="cta" href="#track-record">See the track record</a>
           <a class="cta ghost" href="https://github.com/FrancyJGLisboa/bellwether">View on GitHub</a>
           </div>
-        <div class="meta-row"><span><b>Language</b> Python</span><span><b>Sources</b> 12 government reports, as published since 2020 (some back to 2000)</span><span><b>Measured edge</b> 13 of 23 calls right where climatology expects 7 &mdash; p&nbsp;=&nbsp;0.007</span></div>
+        <div class="meta-row"><span><b>Language</b> Python</span><span><b>Sources</b> 12 government reports + 1 market price feed, as published since 2020 (some back to 2000)</span><span><b>Measured edge</b> 13 of 23 calls right where climatology expects 7 &mdash; p&nbsp;=&nbsp;0.007</span></div>
         </div>
         <figure class="hero-art">
           <button type="button" class="diagram-zoom" data-src="assets/big-idea.svg" data-alt="Every claim moves from raw as-published source through a frozen archive to a cited, computed, and scored prediction." aria-label="Enlarge: Every claim moves from raw as-published source through a frozen archive to a cited, computed, and scored prediction."><img src="assets/big-idea.svg" alt="Every claim moves from raw as-published source through a frozen archive to a cited, computed, and scored prediction."></button>
@@ -147,7 +147,7 @@
         <tr><td>scripts</td><td>Runs the recurring jobs — refreshing data and grading pending forecasts on schedule</td></tr>
         </tbody>
       </table>
-      <p><strong>If you already know the AI jargon:</strong> this is a <em>RAG</em> system — &ldquo;retrieval-augmented generation,&rdquo; where the AI answers from documents it looks up rather than from memory. Bellwether does the looking-up with plain keyword and structured search over the frozen archive (what&rsquo;s called <em>full-text search</em> and <em>SQL</em>), not the &ldquo;meaning-similarity&rdquo; <em>embeddings</em> most such tools use — because for dated, citeable records you want exact matches, not fuzzy ones.</p>
+      <p><strong>If you already know the AI jargon:</strong> this is a <em>RAG</em> system — &ldquo;retrieval-augmented generation,&rdquo; where the AI answers from documents it looks up rather than from memory. Bellwether does the looking-up with full-text and structured search over the frozen archive (<em>FTS</em> and <em>SQL</em>), not the &ldquo;meaning-similarity&rdquo; <em>embeddings</em> most such tools use. It still handles meaning — ask for <em>corn</em> and it also searches <em>maize</em> — but every such jump is written down in a list you can read and diff, not inferred inside a model. The dividing line is <strong>deterministic vs learned</strong>, not keyword vs meaning: for dated, citeable records you want a retrieval step whose behaviour you can audit and test, and that reach is measured on a held-out slice rather than asserted.</p>
       </div>
     </details>
 
