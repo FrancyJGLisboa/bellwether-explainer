@@ -1,0 +1,54 @@
+/* Hallmark · tokens — bellwether explainer
+ * theme: Almanac · genre: editorial · macrostructure: Stat-Led
+ * axes: paper light (96.5%) · display high-contrast-serif · accent warm (62°)
+ * Portable: lift this file into any project to carry the system.
+ */
+:root {
+  /* ── colour · OKLCH only ───────────────────────────────────────────────── */
+  --color-paper:      oklch(96.5% 0.012 85);   /* oat newsprint — the almanac page */
+  --color-paper-2:    oklch(93.8% 0.016 82);   /* raised block / table zebra */
+  --color-paper-3:    oklch(91.0% 0.018 80);   /* pressed / hover */
+  --color-ink:        oklch(25.0% 0.020 60);   /* warm near-black */
+  --color-ink-2:      oklch(46.0% 0.020 65);   /* secondary prose */
+  --color-muted:      oklch(58.0% 0.015 70);   /* captions, fine print */
+  --color-rule:       oklch(86.0% 0.014 80);   /* hairline — the almanac's spine */
+  --color-rule-strong:oklch(72.0% 0.020 78);
+  --color-accent:     oklch(52.0% 0.140 62);   /* harvest ochre — brand amber for light paper */
+  --color-accent-2:   oklch(78.0% 0.130 85);   /* grain amber — marks, ticks, rules */
+  --color-accent-ink: oklch(97.5% 0.010 85);   /* text on accent */
+  --color-focus:      oklch(45.0% 0.180 250);  /* blue ring — ≥3:1 on paper, never animated */
+  --color-ok:         oklch(52.0% 0.110 145);
+  --color-bad:        oklch(52.0% 0.150 28);
+
+  /* ── type · 2+1 discipline ─────────────────────────────────────────────── */
+  --font-display: Fraunces, "Iowan Old Style", Georgia, serif;
+  --font-body:    Inter, system-ui, -apple-system, sans-serif;
+  --font-outlier: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.8125rem;
+  --text-base: 1rem;
+  --text-md:   1.0625rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.5rem;
+  --text-2xl:  clamp(1.6rem, 1.2rem + 1.4vw, 2.1rem);
+  --text-3xl:  clamp(2rem, 1.5rem + 2vw, 2.75rem);
+
+  /* ── space · 4-pt scale ────────────────────────────────────────────────── */
+  --space-3xs: 0.25rem;  --space-2xs: 0.5rem;   --space-xs:  0.75rem;
+  --space-sm:  1rem;     --space-md:  1.5rem;   --space-lg:  2rem;
+  --space-xl:  3rem;     --space-2xl: 4.5rem;   --space-3xl: 7rem;
+
+  /* ── motion ────────────────────────────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-short:   180ms;
+
+  /* ── form ──────────────────────────────────────────────────────────────── */
+  --rule-hair:    1px;
+  --radius-chip:  2px;   /* almanac = printed; corners are cut, not rounded */
+  --radius-card:  3px;
+  --measure:      68ch;
+  --rail-w:       15rem;
+}
