@@ -29,8 +29,10 @@ a decision on the percentage. Every figure behind a call traces to a real dated 
 — the defect is over-trust in its own reasoning, not fabrication.
 
 ## Out of corpus, by design
-No futures prices, basis, spreads, term structure, weather forecasts, or trade-consensus
-surveys. These are refused by name rather than improvised.
+One price series is IN corpus: daily front-month futures settlement, aggregator-sourced
+and stamped BRONZE, kept solely for the fundamentals-vs-price divergence check. Beyond
+it: no cash or basis prices, spreads, term structure, intraday quotes, weather forecasts,
+or trade-consensus surveys. These are refused by name rather than improvised.
 
 ## For your AI
 A downloadable knowledge pack (RVF vector KB + MCP server) ships with this page so your
