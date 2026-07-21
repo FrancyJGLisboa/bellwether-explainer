@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>bellwether — Every number dated and weighed before it leaves the silo.</title>
-  <meta name="description" content="A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.">
+  <meta name="description" content="An AI-ready evidence ledger of US ag intelligence, stored as published and served to agentic runtimes over MCP — self-graded on data the model could not have memorised.">
   <meta name="author" content="Francy Lisboa">
   <link rel="canonical" href="https://francyjglisboa.github.io/bellwether-explainer/">
   <meta name="theme-color" content="#f7f1e4">
   <meta property="og:type" content="website">
   <meta property="og:title" content="bellwether — Every number dated and weighed before it leaves the silo.">
-  <meta property="og:description" content="A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.">
+  <meta property="og:description" content="An AI-ready evidence ledger of US ag intelligence, stored as published and served to agentic runtimes over MCP — self-graded on data the model could not have memorised.">
   <meta property="og:url" content="https://francyjglisboa.github.io/bellwether-explainer/">
   <meta property="og:image" content="https://francyjglisboa.github.io/bellwether-explainer/assets/social-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="bellwether — Every number dated and weighed before it leaves the silo.">
-  <meta name="twitter:description" content="A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.">
+  <meta name="twitter:description" content="An AI-ready evidence ledger of US ag intelligence, stored as published and served to agentic runtimes over MCP — self-graded on data the model could not have memorised.">
   <meta name="twitter:image" content="https://francyjglisboa.github.io/bellwether-explainer/assets/social-card.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -36,7 +36,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "bellwether",
-  "description": "A dated archive of US ag intelligence as published, and a forecasting track record scored on data the model could not have memorised.",
+  "description": "An AI-ready evidence ledger of US ag intelligence, stored as published and served to agentic runtimes over MCP — self-graded on data the model could not have memorised.",
   "url": "https://francyjglisboa.github.io/bellwether-explainer/",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "Cross-platform",
@@ -127,7 +127,7 @@
           <h2>12 sources, one file per release, frozen on the day it published.</h2>
         </div>
         <div class="section-body">
-          <p class="lead-in">Bellwether is a Python tool that pulls in a fixed set of U.S. and global agricultural reports and stores each one frozen as it looked on its release day — later government revisions don't overwrite what was on record at the time.</p>
+          <p class="lead-in">Bellwether is an AI-ready evidence ledger: a Python tool that pulls in a fixed set of U.S. and global agricultural reports, stores each one frozen as it looked on its release day — later government revisions don't overwrite what was on record at the time — and serves the record over MCP to whatever agentic runtime you already work in (Claude Code, Codex, Copilot CLI), as evidence the agent can cite but not corrupt.</p>
           <p>That &ldquo;as published&rdquo; discipline is not a nicety. It is what makes an honest track record possible at all: a system that only serves today's revised figures leaks the answer backwards into the past, and every backtest built on one is fiction.</p>
           <p>It keeps a written record — call it a ledger — of specific forecasts too: a number, for a named report, due on a named future release date. Those entries sit and wait, and get checked off as right or wrong once the real report lands. The ledger is append-only, and one call per series per release: a call that turns out wrong stays wrong, on the record, and cannot be quietly re-rolled.</p>
 
@@ -208,7 +208,7 @@
         </div>
         <div class="section-body">
           <p class="lead-in">Every AI tool claims it doesn't hallucinate. Almost none can tell you whether its analysis is any good. Grounding a number and being right about the future are different problems — and only the second one decides whether the thing is worth reading.</p>
-          <p>So bellwether was made to forecast, in the dark, and then graded.</p>
+          <p>So bellwether is tested the hard way: forced to forecast, in the dark, and then graded. Forecasting is not what it is for &mdash; it is how an evidence ledger proves it deserves the name.</p>
           <p>Twenty-four questions: will the WASDE report three months from now print corn, soybean or wheat stocks and exports <em>above</em> or <em>below</em> where USDA has them standing today? Each one was answered by a fresh AI session that could reach <strong>only</strong> a copy of the archive holding data published on or before that question's date. Later data was physically absent from the only database it could open — not discouraged, absent. One of the twenty-four sessions died on an infrastructure error before answering; the twenty-three that completed are what's graded.</p>
           <p><strong>Every release that settles these questions landed after the model's training cutoff.</strong> It cannot have remembered the answers, because they did not exist when it was trained. That single property is what separates a measurement from a magic trick — and it is only available because the archive keeps every release exactly as published.</p>
 
