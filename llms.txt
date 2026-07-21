@@ -2,7 +2,7 @@
 
 > Every number dated and weighed before it leaves the silo.
 
-A point-in-time archive of 13 US and global agricultural-intelligence sources, stored
+A point-in-time archive of 12 US and global agricultural-intelligence sources, stored
 exactly as published, served to AI agents over MCP — with every figure cited to its
 source document and release date, every direction computed rather than eyeballed, and
 every forecast filed in advance into an append-only ledger that grades itself when the
@@ -29,10 +29,11 @@ a decision on the percentage. Every figure behind a call traces to a real dated 
 — the defect is over-trust in its own reasoning, not fabrication.
 
 ## Out of corpus, by design
-One price series is IN corpus: daily front-month futures settlement, aggregator-sourced
-and stamped BRONZE, kept solely for the fundamentals-vs-price divergence check. Beyond
-it: no cash or basis prices, spreads, term structure, intraday quotes, weather forecasts,
-or trade-consensus surveys. These are refused by name rather than improvised.
+Nothing price-shaped is in corpus — no futures settlement, no cash or basis prices,
+no spreads or term structure, no intraday quotes, no weather forecasts, no
+trade-consensus surveys. These are refused by name rather than improvised; every
+price leg belongs to companion tools, and the fundamentals-only boundary is the
+product decision, not a gap.
 
 ## For your AI
 A downloadable knowledge pack (RVF vector KB + MCP server) ships with this page so your

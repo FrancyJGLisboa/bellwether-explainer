@@ -111,7 +111,7 @@
         </div>
 
         <dl class="ledger">
-          <div><dt class="k">Sources</dt><dd class="v">12<small>government reports + 1 price feed</small></dd></div>
+          <div><dt class="k">Sources</dt><dd class="v">12<small>government sources, fundamentals only</small></dd></div>
           <div><dt class="k">Published since</dt><dd class="v">2020<small>some back to 2000</small></dd></div>
           <div><dt class="k">Every vintage</dt><dd class="v">kept<small>revisions never overwrite</small></dd></div>
           <div><dt class="k">Runs</dt><dd class="v">local<small>Python, on your machine</small></dd></div>
@@ -124,7 +124,7 @@
 
       <section class="section" id="what-it-is">
         <div class="section-head">
-          <h2>13 sources, one file per release, frozen on the day it published.</h2>
+          <h2>12 sources, one file per release, frozen on the day it published.</h2>
         </div>
         <div class="section-body">
           <p class="lead-in">Bellwether is a Python tool that pulls in a fixed set of U.S. and global agricultural reports and stores each one frozen as it looked on its release day — later government revisions don't overwrite what was on record at the time.</p>
@@ -234,7 +234,7 @@
           <p><strong>The direction is trustworthy. The confidence is not.</strong> Ask how sure it is and it says about <b>70%</b>. Measured, it is right about <b>57%</b> of the time. It is not hallucinating — every figure behind that call traces to a real dated document — it simply over-trusts its own reasoning, the way a bright junior analyst does.</p>
           <p>So take the direction, and <strong>do not size a decision on the percentage.</strong> That gap is a known defect with an open fix, not a footnote we hope you skip. A confident wrong number that passes every citation check is more dangerous than an obvious hallucination, precisely because nothing catches it.</p>
           <p><strong>The live ledger is young.</strong> Its forecasts are filed and pending; the earliest settle at the next monthly report. The evidence above comes from the backtest, which grades the same machinery against releases that have already landed.</p>
-          <p><strong>It holds exactly one price series, and knows its weight.</strong> A daily front-month futures settlement close, kept for one job — spotting when fundamentals and price disagree — and stamped BRONZE because it comes from an aggregator, not the exchange. Everything else about price is out of corpus: no cash or basis prices, no spreads or term structure, no intraday quotes, no weather forecasts, no trade-consensus surveys. Ask, and it refuses by name rather than improvise. That boundary is deliberate: those legs belong to other tools, and a system that guesses at them forfeits the only thing that makes this one worth having.</p>
+          <p><strong>It holds no prices at all &mdash; on purpose.</strong> Everything about price is out of corpus: no futures settlement, no cash or basis prices, no spreads or term structure, no intraday quotes, no weather forecasts, no trade-consensus surveys. Ask, and it refuses by name rather than improvise. That boundary is deliberate: the price legs belong to other tools, and a system that guesses at them forfeits the only thing that makes this one worth having.</p>
         </div>
       </section>
 
