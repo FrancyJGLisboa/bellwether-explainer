@@ -143,6 +143,10 @@
             </table>
           </div>
 
+          <figure class="figure-block">
+            <button type="button" class="diagram-zoom" data-src="assets/bellwether-flow.png" data-alt="From as-published release to cited, graded answer: 12 sources publish, the watch daemon captures each release minutes after its slot, the archive keeps every vintage sha-hashed, gates enforce citation and vintage discipline, and every forecast is graded against the next release." aria-label="Enlarge: the full bellwether loop from as-published release to cited, graded answer."><img src="assets/bellwether-flow.png" alt="From as-published release to cited, graded answer: 12 sources publish, the watch daemon captures each release minutes after its slot, the archive keeps every vintage sha-hashed, gates enforce citation and vintage discipline, and every forecast is graded against the next release." loading="lazy"></button>
+          </figure>
+
           <p><strong>If you already know the AI jargon:</strong> this is a <em>RAG</em> system — &ldquo;retrieval-augmented generation,&rdquo; where the AI answers from documents it looks up rather than from memory. Bellwether does the looking-up with full-text and structured search over the frozen archive (<em>FTS</em> and <em>SQL</em>), not the &ldquo;meaning-similarity&rdquo; <em>embeddings</em> most such tools use. It still handles meaning — ask for <em>corn</em> and it also searches <em>maize</em> — but every such jump is written down in a list you can read and diff, not inferred inside a model. The dividing line is <strong>deterministic vs learned</strong>, not keyword vs meaning: for dated, citeable records you want a retrieval step whose behaviour you can audit and test, and that reach is measured on a held-out slice rather than asserted.</p>
         </div>
       </section>
