@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start here — how to talk to Bellwether</title>
+  <meta name="description" content="Where to connect Bellwether and what to ask it: a curated menu of questions the as-published USDA/CFTC/CPC/NDMC archive can answer, cited — and the price/weather/consensus questions it refuses by name.">
+  <meta name="author" content="Francy Lisboa">
+  <link rel="canonical" href="https://francyjglisboa.github.io/bellwether-explainer/start.html">
+  <meta name="theme-color" content="#f7f1e4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Start here — how to talk to Bellwether">
+  <meta property="og:description" content="Where to connect Bellwether and what to ask it — a curated, cited question menu, and the boundary it refuses by name.">
+  <meta property="og:url" content="https://francyjglisboa.github.io/bellwether-explainer/start.html">
+  <meta property="og:image" content="https://francyjglisboa.github.io/bellwether-explainer/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Start here — how to talk to Bellwether">
+  <meta name="twitter:description" content="Where to connect Bellwether and what to ask it — a curated, cited question menu, and the boundary it refuses by name.">
+  <meta name="twitter:image" content="https://francyjglisboa.github.io/bellwether-explainer/assets/social-card.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="masthead">
+    <div class="masthead-inner">
+      <span>Start here · <a href="index.html">the full explainer</a></span>
+      <span>source <a href="https://github.com/FrancyJGLisboa/bellwether" target="_blank" rel="noopener">github.com/FrancyJGLisboa/bellwether</a></span>
+    </div>
+  </div>
+
+  <div class="shell">
+    <aside class="rail">
+      <a class="rail-brand" href="#top" aria-label="bellwether — start here">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="3" y="3" width="26" height="26" rx="3" fill="none" stroke="var(--color-accent)" stroke-width="2"></rect>
+          <rect x="9" y="9" width="14" height="14" rx="1" fill="var(--color-accent-2)"></rect>
+          <circle cx="16" cy="16" r="3" fill="var(--color-ink)"></circle>
+        </svg>
+        <span>bellwether</span>
+      </a>
+      <p class="rail-label">Start here</p>
+      <nav aria-label="Sections">
+        <ol class="rail-index">
+          <li><a href="#boundary"><span class="n">01</span><span>What it will &amp; won't answer</span></a></li>
+          <li><a href="#ask"><span class="n">02</span><span>What to ask</span></a></li>
+          <li><a href="#connect"><span class="n">03</span><span>How to connect</span></a></li>
+          <li><a href="#first"><span class="n">04</span><span>Your first answer</span></a></li>
+        </ol>
+      </nav>
+      <p class="rail-foot">
+        New to the whole thing?<br>
+        Read <a href="index.html">the explainer</a> first.
+      </p>
+    </aside>
+
+    <main id="main" class="column">
+      <a id="top"></a>
+
+      <section class="opening">
+        <p class="kicker">Start here · from &ldquo;how do I use this?&rdquo; to a first cited answer</p>
+        <h1>How to talk to Bellwether.</h1>
+        <p class="lede">
+          Bellwether is a queryable archive of 12 U.S. and global farm-data sources &mdash; WASDE, USDA
+          export sales, CFTC positioning, crop condition, drought and ENSO &mdash; stored exactly as
+          published and handed back with the source file and release date on every number.
+        </p>
+        <p class="attrib">
+          You talk to it through an AI assistant (Claude, or any MCP-capable agent) that has Bellwether
+          attached as a tool. This page is the two things people ask first: <a href="#ask">what to ask
+          it</a>, and <a href="#connect">how to connect it</a>. It is fundamentals only &mdash; it holds
+          <strong>no price data of any kind</strong>, and says so when you ask.
+        </p>
+        <div class="chip-row">
+          <a class="chip primary" href="#ask">See what to ask &rarr;</a>
+          <a class="chip" href="#connect">Connect it</a>
+          <a class="chip" href="index.html">Full explainer</a>
+          <a class="chip" href="https://github.com/FrancyJGLisboa/bellwether" target="_blank" rel="noopener">GitHub &#8599;</a>
+        </div>
+
+        <dl class="ledger">
+          <div><dt class="k">Interface</dt><dd class="v">MCP<small>attaches to any MCP-capable agent</small></dd></div>
+          <div><dt class="k">Every answer</dt><dd class="v">cited<small>source file + release date</small></dd></div>
+          <div><dt class="k">Holds</dt><dd class="v">fundamentals<small>no prices, no forecasts</small></dd></div>
+          <div><dt class="k">Best behind</dt><dd class="v">Sonnet+<small>or a stronger model</small></dd></div>
+        </dl>
+      </section>
+
+      <section class="section" id="boundary">
+        <div class="section-head">
+          <h2>It answers fundamentals, and refuses the rest by name.</h2>
+        </div>
+        <div class="section-body">
+          <p class="lead-in">The fastest way to get a useless answer is to ask for a price. Bellwether
+            has none &mdash; and rather than guess, it tells you which tool does.</p>
+          <div class="dual">
+            <div>
+              <p class="oh">Ask it about &mdash; the archive holds this</p>
+              <ul>
+                <li>Balance sheets &mdash; ending stocks, production, use, stocks-to-use (WASDE, PSD)</li>
+                <li>Export sales &amp; shipments, by commodity and destination (USDA ESR, GATS)</li>
+                <li>Speculative positioning &mdash; managed-money longs/shorts (CFTC COT)</li>
+                <li>Crop condition, progress and acreage (USDA NASS, FSA)</li>
+                <li>Drought coverage, ENSO phase, teleconnection indices (NDMC, CPC, NOAA)</li>
+                <li>Country crop narratives from USDA attach&eacute;s (GAIN reports)</li>
+              </ul>
+            </div>
+            <div>
+              <p class="oh">It will refuse &mdash; and defer, not bluff</p>
+              <ul>
+                <li>&ldquo;December corn futures price?&rdquo; &mdash; no price data of any kind; defers the price leg</li>
+                <li>&ldquo;Cash basis at the Gulf?&rdquo; &mdash; no cash, basis or term structure</li>
+                <li>&ldquo;Will it rain in Mato Grosso next week?&rdquo; &mdash; no weather forecasts</li>
+                <li>&ldquo;What's the trade consensus for the next WASDE?&rdquo; &mdash; no consensus or whisper numbers</li>
+              </ul>
+            </div>
+          </div>
+          <p>A question with a price leg <em>and</em> a fundamentals leg is half-answerable: it delivers
+            the in-corpus half, cited, and names the missing half rather than inventing it.</p>
+        </div>
+      </section>
+
+      <section class="section" id="ask">
+        <div class="section-head">
+          <h2>A menu of questions it can actually answer.</h2>
+        </div>
+        <div class="section-body">
+          <p class="lead-in">Copy any of these into a session where Bellwether is attached. Each traces
+            to a real source; the last column names where the answer comes from.</p>
+          <div class="tbl-scroll">
+            <table class="tbl">
+              <thead>
+                <tr><th>You want to know&hellip;</th><th>Ask this</th><th>Answered from</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Balance-sheet tightness</td>
+                  <td>&ldquo;Latest WASDE US corn ending stocks &mdash; and the change from last month?&rdquo;</td>
+                  <td>WASDE</td>
+                </tr>
+                <tr>
+                  <td>Old-crop vs new-crop</td>
+                  <td>&ldquo;US soybean 2025/26 ending stocks and stocks-to-use, latest projection.&rdquo;</td>
+                  <td>WASDE</td>
+                </tr>
+                <tr>
+                  <td>A point in the past</td>
+                  <td>&ldquo;What did the <b>August 2020</b> WASDE say about wheat ending stocks?&rdquo;</td>
+                  <td>WASDE, dated vintage</td>
+                </tr>
+                <tr>
+                  <td>Export demand</td>
+                  <td>&ldquo;US soybean export sales to China this year vs the same point last year.&rdquo;</td>
+                  <td>USDA Export Sales</td>
+                </tr>
+                <tr>
+                  <td>Weekly sales pace</td>
+                  <td>&ldquo;US corn net sales last week and the four-week pace.&rdquo;</td>
+                  <td>USDA Export Sales</td>
+                </tr>
+                <tr>
+                  <td>Who's positioned how</td>
+                  <td>&ldquo;Managed-money net position in CBOT corn &mdash; how crowded vs the last 20 weeks?&rdquo;</td>
+                  <td>CFTC COT</td>
+                </tr>
+                <tr>
+                  <td>Last week's flow</td>
+                  <td>&ldquo;Did managed money add or cover shorts in Chicago wheat last week?&rdquo;</td>
+                  <td>CFTC COT</td>
+                </tr>
+                <tr>
+                  <td>Crop health, right now</td>
+                  <td>&ldquo;Current US corn good/excellent rating and the week-over-week change.&rdquo;</td>
+                  <td>USDA NASS (weekly)</td>
+                </tr>
+                <tr>
+                  <td>Planted area</td>
+                  <td>&ldquo;US winter wheat planted area for the 2026 crop.&rdquo;</td>
+                  <td>USDA NASS (annual)</td>
+                </tr>
+                <tr>
+                  <td>Drought stress</td>
+                  <td>&ldquo;How much of the US corn belt is in D2+ drought right now?&rdquo;</td>
+                  <td>US Drought Monitor</td>
+                </tr>
+                <tr>
+                  <td>The climate backdrop</td>
+                  <td>&ldquo;What ENSO phase does CPC currently call, and the latest ONI value?&rdquo;</td>
+                  <td>CPC ENSO</td>
+                </tr>
+                <tr>
+                  <td>A country crop story</td>
+                  <td>&ldquo;What does the latest Brazil soybean GAIN report say about the crop?&rdquo;</td>
+                  <td>USDA GAIN attach&eacute;</td>
+                </tr>
+                <tr>
+                  <td>World balance sheet</td>
+                  <td>&ldquo;USDA world corn ending stocks, latest.&rdquo;</td>
+                  <td>USDA PSD</td>
+                </tr>
+                <tr>
+                  <td>Physical shipments</td>
+                  <td>&ldquo;Latest weekly US grain export inspections for corn.&rdquo;</td>
+                  <td>USDA FGIS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="oh">Two habits that make answers better</p>
+          <p>Ask for the <strong>change</strong>, not just the level (&ldquo;&hellip;and how did it move?&rdquo;) &mdash;
+            it computes the delta rather than eyeballing it. And for anything historical, name the
+            <strong>date</strong> (&ldquo;the August 2020 WASDE&rdquo;) so it reads the archive as it stood then,
+            not as later revisions rewrote it.</p>
+        </div>
+      </section>
+
+      <section class="section" id="connect">
+        <div class="section-head">
+          <h2>Two doors &mdash; one is open today.</h2>
+        </div>
+        <div class="section-body">
+          <p class="lead-in">Bellwether is an MCP server. Any MCP-capable agent can attach it. How you
+            connect depends on whether your assistant can launch a local program.</p>
+          <div class="dual">
+            <div>
+              <p class="oh">Local &mdash; works today</p>
+              <p>For assistants that run on your machine and can start a subprocess: <strong>Claude Code,
+                Claude Desktop, Cursor, Copilot CLI.</strong> Clone the repo, then:</p>
+              <pre class="code-block"><code>uv sync
+uv run bellwether all --since 2020 --root archive
+uv run bellwether facts &amp;&amp; uv run bellwether fts
+claude mcp add bellwether -- \
+  uv run bellwether serve --root archive</code></pre>
+              <p>Now any session in that folder answers from the archive, cited. Full steps are in
+                <a href="index.html#get-started">&sect;&thinsp;08 of the explainer</a>.</p>
+            </div>
+            <div>
+              <p class="oh">Remote &mdash; not live yet</p>
+              <p>Web assistants (<strong>Claude.ai, ChatGPT</strong>) can't launch a local program &mdash; they
+                need a hosted URL. That endpoint (<code>bellwether serve-http</code>, bearer-token auth) is
+                built and staged, but <strong>not currently deployed</strong>, so there is no public link to
+                point at today.</p>
+              <p>Want hosted access, or a walk-through connecting the local path? <strong>Ping Francy</strong>
+                &mdash; that's the honest route until the endpoint goes live.</p>
+            </div>
+          </div>
+          <p class="oh">One caveat that decides whether to trust the answer</p>
+          <p>Retrieval works with any model, but the discipline that makes the answer trustworthy &mdash;
+            cite every number, respect the date, refuse what's out of corpus &mdash; was only validated on
+            <strong>Claude Sonnet or better</strong>. Smaller models drop citations and blur the boundary.
+            Attach it wherever you like; for an answer you'd act on, run it behind Sonnet-or-stronger.</p>
+        </div>
+      </section>
+
+      <section class="section" id="first">
+        <div class="section-head">
+          <h2>What a good answer looks like.</h2>
+        </div>
+        <div class="section-body">
+          <p class="lead-in">Once it's attached, paste one question and watch what comes back. A real
+            answer carries its receipts &mdash; if it doesn't, an internal gate vetoes it before you see it.
+            The exchange below shows the <em>shape</em> of an answer (illustrative figures) &mdash; run it
+            live for the real, dated numbers.</p>
+          <pre class="code-block"><code>You:  Latest WASDE US corn ending stocks, and the change from last month?
+
+It:   2026/27 US corn ending stocks are 1,960 million bushels
+      (wasde/2026/wasde_2026-07.md, released 2026-07-11) — up 3
+      from 1,957 the prior month (wasde/2026/wasde_2026-06.md).</code></pre>
+          <p>Every figure names the file and date it came from, and the change is <em>computed</em>, not
+            asserted. Ask a price question next and watch it decline by name &mdash; that refusal is the
+            feature, not a gap.</p>
+          <div class="chip-row">
+            <a class="chip primary" href="#ask">Back to the question menu</a>
+            <a class="chip" href="index.html">How it works, in full</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="colophon" role="contentinfo">
+    <div class="colophon-inner">
+      <div>
+        <h2>Colophon</h2>
+        <p>Start-here page by <strong>Francy Lisboa</strong>. Set in Fraunces, Inter and IBM Plex Mono, on the same system as <a href="index.html">the explainer</a>.</p>
+      </div>
+      <div>
+        <h2>Boundary</h2>
+        <p>Fundamentals only &mdash; 12 government sources, <strong>no price data of any kind</strong>. Price and P&amp;L legs defer to the price tools by name.</p>
+      </div>
+      <div>
+        <h2>Best behind</h2>
+        <p>Claude <strong>Sonnet or better</strong>. The answering discipline was validated there; smaller models degrade on citation and boundary-refusal.</p>
+      </div>
+      <div>
+        <h2>Source</h2>
+        <p><a href="https://github.com/FrancyJGLisboa/bellwether" rel="noopener" target="_blank">github.com/FrancyJGLisboa/bellwether</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    /* side-rail current-section highlight — same wayfinding as the explainer */
+    var links = Array.prototype.slice.call(document.querySelectorAll('.rail-index a'));
+    var secs = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+    if ('IntersectionObserver' in window) {
+      var so = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          var i = secs.indexOf(en.target);
+          if (i < 0) return;
+          links.forEach(function (a) { a.removeAttribute('aria-current'); });
+          links[i].setAttribute('aria-current', 'true');
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+      secs.forEach(function (s) { if (s) so.observe(s); });
+    }
+  })();
+  </script>
+</body>
+</html>
